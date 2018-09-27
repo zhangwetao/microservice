@@ -6,7 +6,7 @@ spring:
   cloud:
     config:
       label: master
-      profile: dev
+      profile: default
       discovery:
         enabled: true
         serviceId: config-server

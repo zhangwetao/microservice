@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: appointment-webservice
+  cloud:
+    config:
+      uri: http://localhost:8881

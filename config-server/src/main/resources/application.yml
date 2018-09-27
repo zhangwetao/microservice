@@ -5,9 +5,15 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/suwei1979/SpringCloudLearning
-          searchPaths: respo
-      label: master
+#          uri: git@github.com:suwei1979/config-repo.git
+          uri: git@github.com:suwei1979/${PRODUCT_NAME:config-server}.git
+          search-paths: '{profile}/{application}'
+
+#          uri: http://git.intra.weibo.com/jinsong6/spring-cloud.git
+#          searchPaths: '{application}'
+#          username: jinsong6
+#          password: Zhujinsong1994
+
 server:
   port: 8881
 eureka:
